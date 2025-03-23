@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Portfolyo - Ahmet Köse</title>
+</head>
+<body>
+    <!-- Açma Butonu Başlangıç -->
+     <span class="openbtn" id="openbtn" onclick="toggleSidebar()">☰</span>
+     <!-- Açma Butonu Bitiş -->
+
+     <!-- Sidebar Başlangıç -->
+
+     <div class="sidebar" id="sidebar">
+        <span class="closebtn" onclick="toggleSidebar()">🗙</span>
+        <div class="profile">
+            <img src="/img/ahmet.jpg" alt="Profil Fotosu">
+            <h2>Ahmet Köse</h2>
+            <h3>Öğrenci</h3>
+        </div>
+        <!-- Profil Bitiş -->
+         <nav>
+            <ul>
+                <li onclick="showSection('egitim')">Eğitim</li>
+                <li onclick="showSection('tecrube')">Tecrübe</li>
+                <li onclick="showSection('yetenekler')">Yetenekler</li>
+                <li onclick="showSection('portfolyo')">Portfolyo</li>
+                <li onclick="showSection('iletisim')">İletişim</li>
+            </ul>
+         </nav>
+         <!-- Nav bitiş -->
+
+     </div>
+     <!-- Sidebar Bitiş -->
+
+     <div class="content" id="content">
+        <!-- Eğitim başlangıç -->
+        <div id="egitim" class="section active">
+            <h2>Eğitim</h2>
+            <ul class="education-list">
+                <li>
+                    <h3>Kapadokya Universitesi</h3>
+                    <p><strong>Kapadokya Meslek Yüksekokulu <br>
+                        Bilişim Güvenliği Teknolojisi 1.Sınıf</strong> |
+                    2024-</p>
+                </li>
+                <li>
+                    <h3>Toki Şehit Savaş Kubaş Anadolu Lisesi</h3>
+                    <p><strong>Lise Eğitimi</strong> |
+                    2019-2023</p>
+                </li>
+                <li>
+                    <h3>Hasan Polatkan Ortaokulu</h3>
+                    <p><strong>Ortaöğretim</strong> |
+                    2015-2019</p>
+                </li>
+                <li>
+                    <h3>Ahmet Hamdi Bayraktar İlkokulu</h3>
+                    <p><strong>İlköğretim</strong> |
+                    2011-2015</p>
+                </li>
+            </ul>
+        </div>
+        <!-- Eğitim bitiş -->
+
+        <!-- Tecrübe Alanı -->
+         <div id="tecrube" class="section">
+            <h2>Tecrübe</h2>
+            <ul class="experience-list">
+                <li><strong>Şu anlık bir tecrübem yok</strong>
+                <p>İleride olucak.</p>
+            </li>
+            </ul>
+         </div>
+         <!-- Tecrübe Alanı Bitiş -->
+          <!-- Yetenekler Alanı Başlangıç -->
+
+          <div id="yetenekler" class="section">
+            <h2>Yetenekler</h2>
+            <ul class="skills-list">
+                <li>B1 Seviyesinde İngilizce</li>
+                <li>Başlangıç Seviyesinde PHP</li>
+                <li>Başlangıç Seviyesinde JavaScript</li>
+                <li>Başlangıç Seviyesinde MySql</li>
+                <li>Başlangıç Seviyesinde Yazılım ve Algoritma Geliştirme</li>
+                <li>Orta Düzey Python</li>
+                <li>Orta Düzey HTML ve CSS</li>
+                <li>Orta Düzey Adobe Premiere Pro </li>
+                <li>Orta Düzey Adobe Photoshop</li>
+            </ul>
+          </div>
+          <!-- Yetenekler Alanı Bitiş -->
+
+          <!-- Portfolyo Bölümü -->
+          <div class="section" id="portfolyo">
+            <h2>Portfolyo</h2>
+            <div class="portfolyo-items">
+                <div class="portfolyo-item">
+                    <h3>Haber Sitesi</h3>
+                    <p>Basit bir haber sitesi tasarladım.</p>
+                </div>
+                <div class="portfolyo-item">
+                    <h3>Dizi/Film Anasayfası</h3>
+                    <p>Basit bir anasayfa tasarladım.</p>
+                </div>
+                <div class="portfolyo-item">
+                    <h3>Python İle Basit Projeler</h3>
+                    <p>Basit ama kullanışlı python projeleri yazdım.</p>
+                </div>
+                <div class="portfolyo-item">
+                    <h3>Video Edit</h3>
+                    <p>Video edit olarak bir çok videom bulunuyor.</p>
+                </div>
+            </div>
+        </div>
+        
+
+           <!-- Portfolyo Bitiş -->
+            <!-- İletişim Bölümü -->
+
+            <div id="iletisim" class="section" >
+                <h2>İletişim</h2>
+                <div class="contact-info">
+                    <p><strong>E-posta: </strong>
+                        <a href="mailto:akose2005@gmail.com">akose2005@gmail.com</a>
+                    </p>
+                    <p><strong>Telefon: </strong>+90 535 735 1626</p>
+                    <p><strong>Adres: </strong>Eskişehir,Türkiye</p>
+                </div>
+            </div>
+            <!-- İletişim Bitiş -->
+          
+     </div>
+     <!-- Content Bitiş -->
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
